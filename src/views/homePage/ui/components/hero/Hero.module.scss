@@ -1,0 +1,44 @@
+@import '../../../../../shared/styles/mixins/breakpoints';
+
+
+
+.root {
+    position: relative;
+}
+
+
+
+.content {
+   
+}
+
+
+
+.text {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+    color: white;
+}
+
+.title {
+    font-size: 84px;
+    line-height: 94px;
+}
+
+.imageHolder {
+    width: 100vw;
+   position: absolute;
+   top: 0;
+   right: 0px;
+   z-index: -1;
+   overflow: hidden;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+    img {
+        width: auto;
+        height: 100vh;
+    }
+}
