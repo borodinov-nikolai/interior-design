@@ -2,15 +2,12 @@
 @import './mixins/breakpoints';
 @import './variables/variables';
 
-
-
-
-
 main {
     min-height: 100vh;
 }
 
 body {
+    font-family: var(--font-roboto);
     background: var(--body-background);
     color: white;
 }

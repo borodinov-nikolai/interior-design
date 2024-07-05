@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Header.module.scss'
 import cs from 'classnames'
 import Link from 'next/link'
-import BurgerIcon from '@/shared/icons/burger'
+import BurgerIcon from '@/shared/svg/burger'
 import Button from '@/shared/ui/button'
 
 export const Header = () => {
