@@ -15,12 +15,40 @@
     display: flex;
     flex-basis: 50%;
     align-items: center;
-    h1 {
-        font-size: 42px;
-        line-height: 54px;
-        font-family: var(--font-ElMessiri);
-        text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.topTitle {
+    line-height: 21px;
+    color: rgba(255, 201, 120, 1);
+    text-transform: uppercase;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 28px;
+    line-height: 34px;
+    font-family: var(--font-ElMessiri);
+    text-transform: uppercase;
+    position: relative;
+}
+.description {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(171, 174, 183, 1);
+    max-width: 50%;
+}
+
+.btn {
+    margin-top: 10px;
+    button {
+        height: 40px;
     }
+}
+
+.starsSvg {
+    display:none;
 }
 
 .lineSvg {
@@ -68,11 +96,33 @@
         height: 100%;
         width: 100%;
         flex-basis: 0;
-        h1 {
-            font-size: 84px;
-            line-height: 94px;
-            max-width: 40%;
+    }
+    
+    .title {
+        margin-top: 30px;
+        font-size: 70px;
+        line-height: 80px;
+        max-width: 45%;
+
+    }
+
+    .description {
+        margin-top: 10px;
+        max-width: 45%;
+    }
+
+    .btn {
+        margin-top: 50px;
+        button {
+            height: 50px;
         }
+    }
+
+    .starsSvg {
+        display: block;
+        position: absolute;
+        top: -125px;
+        right: 0;
     }
 
     .lineSvg {
