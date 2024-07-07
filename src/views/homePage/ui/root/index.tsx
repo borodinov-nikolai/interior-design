@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from './HomePage.module.scss'
-import cs from 'classnames'
 import Hero from '../components/hero'
-import { Specializations } from '../components/specializations'
+import SpecializationsDesktop from '../components/specializationsDesktop'
+import { specializationsList } from '../../constants/specializationsList'
+import SpecializationsMobile from '../components/specializationsMobile'
+
 
 export const HomePage = () => {
   return (
@@ -13,7 +15,8 @@ export const HomePage = () => {
       </section>
 
       <section className={styles.specializations} >
-        <Specializations />
+        <div className={styles.specializationsDesktop} >< SpecializationsDesktop items={specializationsList} /></div>
+        <div className={styles.specializationsMobile} ><SpecializationsMobile items={specializationsList} /></div>
       </section>
       
     </main>

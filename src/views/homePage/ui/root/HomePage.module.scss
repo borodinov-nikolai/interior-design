@@ -1,0 +1,24 @@
+@import '../../../../shared/styles/mixins/breakpoints';
+
+
+.specializations {
+    margin-top: 50px;
+}
+.specializationsDesktop {
+    display: none;
+}
+
+
+@include breakpoint(md) {
+    .specializations {
+        margin-top: 140px;
+    }
+
+    .specializationsMobile {
+        display: none;
+    }
+
+    .specializationsDesktop {
+        display: block;
+    }
+}

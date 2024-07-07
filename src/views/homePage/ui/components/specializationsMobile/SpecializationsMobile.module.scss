@@ -1,0 +1,42 @@
+
+
+
+
+.title {
+
+    p {
+        color: rgba(255, 201, 120, 1);
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-family: var(--font-ElMessiri);
+        font-size: 36px;
+    }
+}
+
+.slider {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: relative;
+   width: max-content !important;
+}
+
+.slideText {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    max-width: 230px;
+    h3 {
+      font-size: 24px;
+      line-height: 31px;
+      font-family: var(--font-ElMessiri);
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
