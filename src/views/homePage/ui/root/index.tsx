@@ -4,6 +4,7 @@ import Hero from '../components/hero'
 import SpecializationsDesktop from '../components/specializationsDesktop'
 import { specializationsList } from '../../constants/specializationsList'
 import SpecializationsMobile from '../components/specializationsMobile'
+import AboutUs from '../components/aboutUs'
 
 
 export const HomePage = () => {
@@ -18,6 +19,8 @@ export const HomePage = () => {
         <div className={styles.specializationsDesktop} >< SpecializationsDesktop items={specializationsList} /></div>
         <div className={styles.specializationsMobile} ><SpecializationsMobile items={specializationsList} /></div>
       </section>
+      
+        <section className={styles.aboutUs} ><AboutUs/></section>
       
     </main>
   )

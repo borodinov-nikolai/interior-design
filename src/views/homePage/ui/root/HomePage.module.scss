@@ -8,6 +8,10 @@
     display: none;
 }
 
+.aboutUs {
+    margin-top: 50px;
+}
+
 
 @include breakpoint(md) {
     .specializations {
@@ -20,5 +24,9 @@
 
     .specializationsDesktop {
         display: block;
+    }
+
+    .aboutUs {
+        margin-top: 140px;
     }
 }

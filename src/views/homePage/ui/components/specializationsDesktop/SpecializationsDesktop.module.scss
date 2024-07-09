@@ -39,12 +39,12 @@
 
 .listItemText {
   position: absolute;
-  left: 30px;
-  bottom: 30px;
+  left: 10px;
+  bottom: 10px;
   max-width: 230px;
   h3 {
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 20px;
+    line-height: 24px;
     font-family: var(--font-ElMessiri);
   }
   p {
@@ -89,6 +89,13 @@
   .listItem {
     width: 300px;
     height: 500px;
+  }
+
+  .listItemText {
+    h3 {
+      font-size: 24px;
+    line-height: 31px;
+    }
   }
 
 
