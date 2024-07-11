@@ -10,7 +10,7 @@ const AboutUs = () => {
       <div className={cs(styles.inner, 'container')}>
         <div className={styles.text} >
           <h2>About Us</h2>
-          <p>As development continues, engineers may visit building destinations to guarantee that temporary workers pursue the plan, keep to the timetable, utilize the predefined materials, and meet work-quality models.</p>
+          <p>  <p className={styles.verticalLine} ></p> As development continues, engineers may visit building destinations to guarantee that temporary workers pursue the plan, keep to the timetable, utilize the predefined materials, and meet work-quality models.</p>
         </div>
         <div className={styles.gallery} >
           <div className={styles.gallery_imageHolder1} >
@@ -22,7 +22,7 @@ const AboutUs = () => {
         </div>
         <div className={styles.satisfiedClients} >
           <div className={styles.satisfiedClients_text} >
-            <p><span>85%</span>Satisfied Clients</p>
+            <p> <span>85%</span>Satisfied Clients</p>
           </div >
           <Image className={styles.satisfiedClients_image} src='/images/aboutUs_1.jpg' width={408} height={175} alt='satisfied clients image' />
           <div className={styles.satisfiedClients_readmoreImageHolder} >
@@ -32,6 +32,8 @@ const AboutUs = () => {
         </div>
       </div>
       <div className={styles.lineSvgHolder} ><LineSvg/></div>
+      <div className={styles.designImgDesktopHolder} ><Image src='/images/design.png' width={591} height={100} alt='design image'/></div>
+      <div className={styles.designImgMobileHolder} ><Image src='/images/white_design.png' width={92} height={436} alt='whiet design image' /> </div>
     </div>
   )
 }

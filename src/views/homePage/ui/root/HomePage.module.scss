@@ -12,6 +12,9 @@
     margin-top: 50px;
 }
 
+.ourProjects {
+    margin-top: 50px;
+}
 
 @include breakpoint(md) {
     .specializations {
@@ -27,6 +30,10 @@
     }
 
     .aboutUs {
+        margin-top: 140px;
+    }
+
+    .ourProjects {
         margin-top: 140px;
     }
 }
