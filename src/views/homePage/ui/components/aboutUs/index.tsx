@@ -2,10 +2,11 @@ import React from 'react'
 import styles from './AboutUs.module.scss'
 import Image from 'next/image'
 import cs from 'classnames'
+import LineSvg from '@/shared/svg/line'
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className={styles.root} > 
       <div className={cs(styles.inner, 'container')}>
         <div className={styles.text} >
           <h2>About Us</h2>
@@ -24,8 +25,13 @@ const AboutUs = () => {
             <p><span>85%</span>Satisfied Clients</p>
           </div >
           <Image className={styles.satisfiedClients_image} src='/images/aboutUs_1.jpg' width={408} height={175} alt='satisfied clients image' />
+          <div className={styles.satisfiedClients_readmoreImageHolder} >
+            <Image src='/images/about_us_readmore.png' width={151} height={151} alt='read more image' />
+            <Image className={styles.satisfiedClients_starImage} src='/images/about_us_star.png' width={37} height={37} alt='read more star image' />
+          </div>
         </div>
       </div>
+      <div className={styles.lineSvgHolder} ><LineSvg/></div>
     </div>
   )
 }
