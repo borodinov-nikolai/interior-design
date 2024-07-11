@@ -94,9 +94,7 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    img {
-
-    }
+    
 }
 
 
@@ -122,6 +120,7 @@
     }
 
     .verticalLine {
+        display: block;
         height: 120px;
         width: 2px;
         background: linear-gradient(180deg, rgba(171, 174, 183, 0) 0%, #ABAEB7 51.56%, rgba(171, 174, 183, 0) 100%);

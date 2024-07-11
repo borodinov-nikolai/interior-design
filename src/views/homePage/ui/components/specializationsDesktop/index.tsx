@@ -2,10 +2,10 @@ import React from 'react'
 import styles from './SpecializationsDesktop.module.scss'
 import Image from 'next/image'
 import cs from 'classnames'
-import { SpecializatonsList } from '@/views/homePage/constants/specializationsList'
+import { ISpecialization } from '@/entities/specialization'
 
 
-const SpecializationsDesktop = ({items}: {items: SpecializatonsList}) => {
+const SpecializationsDesktop = ({items}: {items: ISpecialization[]}) => {
   return (
     <div className={styles.root} >
     <div className={styles.title} >

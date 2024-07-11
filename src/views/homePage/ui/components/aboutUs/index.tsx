@@ -10,7 +10,7 @@ const AboutUs = () => {
       <div className={cs(styles.inner, 'container')}>
         <div className={styles.text} >
           <h2>About Us</h2>
-          <p>  <p className={styles.verticalLine} ></p> As development continues, engineers may visit building destinations to guarantee that temporary workers pursue the plan, keep to the timetable, utilize the predefined materials, and meet work-quality models.</p>
+          <p>  <span className={styles.verticalLine} ></span> As development continues, engineers may visit building destinations to guarantee that temporary workers pursue the plan, keep to the timetable, utilize the predefined materials, and meet work-quality models.</p>
         </div>
         <div className={styles.gallery} >
           <div className={styles.gallery_imageHolder1} >

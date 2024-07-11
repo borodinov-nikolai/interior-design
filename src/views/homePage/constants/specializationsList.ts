@@ -28,4 +28,3 @@ export const specializationsList = [
     },
   ]
 
-  export type SpecializatonsList = typeof specializationsList

@@ -6,6 +6,7 @@ import { specializationsList } from '../../constants/specializationsList'
 import SpecializationsMobile from '../components/specializationsMobile'
 import AboutUs from '../components/aboutUs'
 import OurProjects from '../components/ourProjects'
+import { ourProjects } from '../../constants/ourProjects'
 
 
 export const HomePage = () => {
@@ -22,7 +23,7 @@ export const HomePage = () => {
       </section>
       
         <section className={styles.aboutUs} ><AboutUs/></section>
-        <section className={styles.ourProjects} ><OurProjects/></section>
+        <section className={styles.ourProjects} ><OurProjects projects={ourProjects} /></section>
       
     </main>
   )

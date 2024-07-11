@@ -1,0 +1,1 @@
+export type {ISpecialization} from './interfaces/specialization'

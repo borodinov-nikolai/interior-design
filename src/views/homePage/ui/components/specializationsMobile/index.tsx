@@ -5,10 +5,10 @@ import React from 'react'
 import styles from './SpecializationsMobile.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Image from 'next/image'
-import { SpecializatonsList } from '@/views/homePage/constants/specializationsList'
 import { FreeMode } from 'swiper/modules'
+import { ISpecialization } from '@/entities/specialization';
 
-const SpecializationsMobile = ({items}: {items: SpecializatonsList}) => {
+const SpecializationsMobile = ({items}: {items: ISpecialization[]}) => {
   return (
     <div className={styles.root} >
 
