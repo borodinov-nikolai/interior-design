@@ -27,6 +27,7 @@
 
 .navbarItem {
     cursor: pointer;
+    font-weight: 500;
     padding-bottom: 5px;
     border-bottom: 1px solid transparent;
     &__active {
@@ -41,7 +42,48 @@
 }
 
 .gallery {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+}
+
+.galleryItem {
+    width: 100%;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@include breakpoint(md) {
+
+    
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .title {
+        h2 {
+            font-size: 60px;
+        }
+    }
+}
+
+@include breakpoint(lg) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+     .navbar {
+        width: 400px;
+     }
+
+     .gallery {
+        margin-top: 80px;
+        gap: 20px;
+     }
 }
