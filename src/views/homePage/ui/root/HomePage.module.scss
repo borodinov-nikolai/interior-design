@@ -1,25 +1,31 @@
 @import '../../../../shared/styles/mixins/breakpoints';
 
 
-.specializations {
-    margin-top: 50px;
+.root {
+    section {
+        margin-top: 50px;
+    }
+    .hero {
+        margin-top: unset;
+    }
+    
 }
+
+
 .specializationsDesktop {
     display: none;
 }
 
-.aboutUs {
-    margin-top: 50px;
-}
-
-.ourProjects {
-    margin-top: 50px;
-}
 
 @include breakpoint(md) {
-    .specializations {
-        margin-top: 140px;
+    
+    .root {
+        section {
+            margin-top: 140px;
+        }
     }
+
+ 
 
     .specializationsMobile {
         display: none;
@@ -29,11 +35,5 @@
         display: block;
     }
 
-    .aboutUs {
-        margin-top: 140px;
-    }
-
-    .ourProjects {
-        margin-top: 140px;
-    }
+   
 }

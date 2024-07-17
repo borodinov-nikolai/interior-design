@@ -7,11 +7,12 @@ import SpecializationsMobile from '../components/specializationsMobile'
 import AboutUs from '../components/aboutUs'
 import OurProjects from '../components/ourProjects'
 import { ourProjects } from '../../constants/ourProjects'
+import Experience from '../components/experience'
 
 
 export const HomePage = () => {
   return (
-    <main>
+    <main className={styles.root} >
 
       <section className={styles.hero} >
         <Hero />
@@ -24,6 +25,7 @@ export const HomePage = () => {
       
         <section className={styles.aboutUs} ><AboutUs/></section>
         <section className={styles.ourProjects} ><OurProjects projects={ourProjects} /></section>
+        <section className={styles.experience}><Experience/></section>
       
     </main>
   )

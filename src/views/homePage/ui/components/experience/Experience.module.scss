@@ -1,0 +1,38 @@
+@import '../../../../../shared/styles/mixins/breakpoints';
+
+
+
+.root {
+    background: url('/images/R.png');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+
+.schemeImg {
+    width: 100%;
+    height: auto;
+}
+
+@include breakpoint(md) {
+
+     .schemeImg {
+        width: 557px;
+        height: 480px;
+     }
+}
+
+@include breakpoint(xl) {
+    .root {
+        background-position: right;
+    }
+}

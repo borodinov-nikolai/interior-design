@@ -32,7 +32,7 @@ const OurProjects = ({projects}: {projects: IProject[]}) => {
   const hadleChange = (value: number)=> {
     setActiveTab(value)
   }
-  const handleMarginTop = (id: number)=> {
+  const handleMarginTop = (id: number, windowWidth: number)=> {
   if(windowWidth < 992 && id % 2 === 1) {
     return "-30px"
   } else if(windowWidth > 992 && id % 2 === 1) {
@@ -62,7 +62,7 @@ const OurProjects = ({projects}: {projects: IProject[]}) => {
           <ul className={styles.gallery} >
             {
               projects?.slice(0, windowWidth < 768 ? 4 : 8).map(({id, image})=> (
-                <li className={styles.galleryItem} style={{marginTop: handleMarginTop(id)}} key={id} >
+                <li className={styles.galleryItem} style={{marginTop: handleMarginTop(id, windowWidth)}} key={id} >
                   <Image src={image} width={400} height={700} alt='our projects gallery image'/>
                 </li>
               ))
